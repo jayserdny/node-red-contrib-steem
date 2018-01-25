@@ -4,7 +4,7 @@
   "description": "Node Red nodes for the Steem Blockchain",
   "node-red": {
     "nodes": {
-      "coinlist": "accounts/getAccounts.js"
+      "getAccounts": "nodes/accounts/getAccounts.js"
     }
   },
   "scripts": {
