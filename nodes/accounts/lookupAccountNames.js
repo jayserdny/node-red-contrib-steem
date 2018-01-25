@@ -2,7 +2,7 @@ var steem = require('steem');
 
 module.exports = (RED) => {
     "use strict";
-    function getAccountsNode(config) {
+    function lookupAccountNamesNode(config) {
         RED.nodes.createNode(this,config);
         var node = this;
         var param = config;
@@ -15,12 +15,12 @@ module.exports = (RED) => {
                 usernames = param.accounts
             }
             
-            steem.api.getAccounts(usernames, (err, response) => {
+            steem.api.lookupAccountNames(usernames, (err, response) => {
                 msg.payload = response
                 node.send(msg);
             });
             
         });
     }
-    RED.nodes.registerType("getAccounts", getAccountsNode);
-}
+    RED.nodes.registerType("lookupAccountNames", lookupAccountNamesNode);
+  }
