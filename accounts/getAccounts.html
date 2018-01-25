@@ -1,0 +1,29 @@
+<script type="text/javascript">
+    RED.nodes.registerType('getAccounts',{
+      category: 'Steem Blockchain',
+      color: '#65bf77',
+      defaults: {
+        name: {value:''},
+        accounts: {value:'ned'}
+      },
+      inputs:1,
+      outputs:1,
+      label: function() {
+        return this.name || 'getAccounts';
+      }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="getAccounts">
+    <div class="form-row">
+        <label for="node-input-accounts"><i class="icon-tag"></i> Accounts</label>
+        <input type="text" id="node-input-accounts" placeholder="Accounts">
+    </div>
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+<script type="text/x-red" data-help-name="getAccounts">
+    <p>Node-RED package to query accounts from Steem Blockchain.</p>
+</script>
