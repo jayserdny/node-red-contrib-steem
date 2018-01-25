@@ -7,7 +7,7 @@
       "getAccounts": "nodes/accounts/getAccounts.js",
       "getAccountReferences": "nodes/accounts/getAccountReferences.js",
       "lookupAccountNames": "nodes/accounts/lookupAccountNames.js",
-      "lookupAccounts": "noodes/accoutns/lookupAccounts.js"
+      "lookupAccounts": "nodes/accounts/lookupAccounts.js"
     }
   },
   "scripts": {
