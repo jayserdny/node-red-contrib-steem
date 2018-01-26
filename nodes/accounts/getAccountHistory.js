@@ -8,7 +8,6 @@ module.exports = (RED) => {
         var param = config;
         
         node.on('input', (msg) => {
-            console.log(param.account, param.from, param.limit)
             steem.api.getAccountHistory(param.account, param.from, param.limit
             , (err, response) => {
                 msg.payload = response
