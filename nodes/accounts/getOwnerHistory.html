@@ -1,29 +1,29 @@
 <script type="text/javascript">
-    RED.nodes.registerType('getAccountReferences',{
+    RED.nodes.registerType('getOwnerHistory',{
       category: 'Steem Blockchain',
       color: '#65bf77',
       defaults: {
         name: {value:''},
-        accountId: {value:''}
+        accountName: {value:'ned'}
       },
       inputs:1,
       outputs:1,
       label: function() {
-        return this.name || 'getAccountReferences';
+        return this.name || 'getOwnerHistory';
       }
     });
 </script>
 
-<script type="text/x-red" data-template-name="getAccountReferences">
+<script type="text/x-red" data-template-name="getOwnerHistory">
     <div class="form-row">
-        <label for="node-input-accountId"><i class="icon-tag"></i> accountId</label>
-        <input type="text" id="node-input-accountId" placeholder="Account ID">
+        <label for="node-input-accountName"><i class="icon-tag"></i> Account Name</label>
+        <input type="text" id="node-input-accountName" placeholder="accountName">
     </div>
     <div class="form-row">
         <label for="node-input-name"><i class="icon-tag"></i> Name</label>
         <input type="text" id="node-input-name" placeholder="Name">
     </div>
 </script>
-<script type="text/x-red" data-help-name="getAccountReferences">
+<script type="text/x-red" data-help-name="getOwnerHistory">
     <p>Node-RED package to query accounts from Steem Blockchain.</p>
 </script>

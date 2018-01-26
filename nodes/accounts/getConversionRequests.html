@@ -1,29 +1,29 @@
 <script type="text/javascript">
-    RED.nodes.registerType('lookupAccountNames',{
+    RED.nodes.registerType('getConversionRequests',{
       category: 'Steem Blockchain',
       color: '#65bf77',
       defaults: {
         name: {value:''},
-        usernames: {value:'ned'}
+        accountName: {value:'ned'}
       },
       inputs:1,
       outputs:1,
       label: function() {
-        return this.name || 'lookupAccountNames';
+        return this.name || 'getConversionRequests';
       }
     });
 </script>
 
-<script type="text/x-red" data-template-name="lookupAccountNames">
+<script type="text/x-red" data-template-name="getConversionRequests">
     <div class="form-row">
-        <label for="node-input-usernames"><i class="icon-tag"></i> Usernames</label>
-        <input type="text" id="node-input-usernames" placeholder="Usernames">
+        <label for="node-input-accountName"><i class="icon-tag"></i> Account Name</label>
+        <input type="text" id="node-input-accountName" placeholder="accountName">
     </div>
     <div class="form-row">
         <label for="node-input-name"><i class="icon-tag"></i> Name</label>
         <input type="text" id="node-input-name" placeholder="Name">
     </div>
 </script>
-<script type="text/x-red" data-help-name="lookupAccountNames">
+<script type="text/x-red" data-help-name="getConversionRequests">
     <p>Node-RED package to query accounts from Steem Blockchain.</p>
 </script>

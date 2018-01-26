@@ -5,9 +5,11 @@
   "node-red": {
     "nodes": {
       "getAccounts": "nodes/accounts/getAccounts.js",
-      "getAccountReferences": "nodes/accounts/getAccountReferences.js",
-      "lookupAccountNames": "nodes/accounts/lookupAccountNames.js",
-      "lookupAccounts": "nodes/accounts/lookupAccounts.js"
+      "getAccountCount": "nodes/accounts/getAccountCount.js",
+      "getConversionRequests": "nodes/accounts/getConversionRequests.js",
+      "getAccountHistory": "nodes/accounts/getAccountHistory.js",
+      "getOwnerHistory": "nodes/accounts/getOwnerHistory.js",
+      "getRecoveryRequest": "nodes/accounts/getRecoveryRequest.js"
     }
   },
   "scripts": {

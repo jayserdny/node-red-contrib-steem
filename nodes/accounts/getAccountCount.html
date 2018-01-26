@@ -1,0 +1,24 @@
+<script type="text/javascript">
+    RED.nodes.registerType('getAccountCount',{
+      category: 'Steem Blockchain',
+      color: '#65bf77',
+      defaults: {
+        name: {value:''}
+      },
+      inputs:1,
+      outputs:1,
+      label: function() {
+        return this.name || 'getAccountCount';
+      }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="getAccountCount">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+<script type="text/x-red" data-help-name="getAccountCount">
+    <p>Node-RED package to query accounts from Steem Blockchain.</p>
+</script>

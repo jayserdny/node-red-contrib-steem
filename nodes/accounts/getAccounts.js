@@ -18,8 +18,7 @@ module.exports = (RED) => {
             steem.api.getAccounts(usernames, (err, response) => {
                 msg.payload = response
                 node.send(msg);
-            });
-            
+            });        
         });
     }
     RED.nodes.registerType("getAccounts", getAccountsNode);

@@ -1,0 +1,39 @@
+<script type="text/javascript">
+    RED.nodes.registerType('getAccountHistory',{
+      category: 'Steem Blockchain',
+      color: '#65bf77',
+      defaults: {
+        name: {value:''},
+        account: {value:'ned'},
+        from: {value:0},
+        limit: {value:15}
+      },
+      inputs:1,
+      outputs:1,
+      label: function() {
+        return this.name || 'getAccountHistory';
+      }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="getAccountHistory">
+    <div class="form-row">
+        <label for="node-input-account"><i class="icon-tag"></i> Account</label>
+        <input type="text" id="node-input-account" placeholder="Account">
+    </div>
+    <div class="form-row">
+        <label for="node-input-from"><i class="icon-tag"></i> From</label>
+        <input type="text" id="node-input-from" placeholder="From">
+    </div>
+    <div class="form-row">
+        <label for="node-input-limit"><i class="icon-tag"></i> Limit</label>
+        <input type="text" id="node-input-limit" placeholder="Limit">
+    </div>
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+<script type="text/x-red" data-help-name="getAccountHistory">
+    <p>Node-RED package to query accounts from Steem Blockchain.</p>
+</script>
