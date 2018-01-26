@@ -4,7 +4,7 @@ With this library, you will be able to use the Steem js library with just drag a
 
 ## Available Nodes
 
-*Accounts:*
+**Accounts:**
 
 - getAccounts
 - getAccountCount
