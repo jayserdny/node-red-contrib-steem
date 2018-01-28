@@ -14,7 +14,7 @@ module.exports = (RED) => {
             node.status({});
 
             // Pass arguments to validator
-            let validation = validateParams(param.accountName);
+            let validation = validateParams(param.Reward_Fund_Name);
 
             if (validation === false) {
                 node.status({
@@ -25,7 +25,7 @@ module.exports = (RED) => {
                 return false;
             }
 
-            steem.api.getRewardFund(param.accountName, (err, response) => {
+            steem.api.getRewardFund(param.Reward_Fund_Name, (err, response) => {
                 // Check if the response is correct
                 if (response) {
                     msg.payload = response;
