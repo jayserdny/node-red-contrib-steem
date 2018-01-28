@@ -16,7 +16,8 @@
       "getRepliesByLastUpdate": "nodes/content/getRepliesByLastUpdate.js",
       "getWitnesses": "nodes/witnesses/getWitnesses.js",
       "getWitnessByAccount": "nodes/witnesses/getWitnessByAccount.js",
-      "getWitnessesByVote": "nodes/witnesses/getWitnessesByVote.js"
+      "getWitnessesByVote": "nodes/witnesses/getWitnessesByVote.js",
+      "getWitnessCount": "nodes/witnesses/getWitnessCount.js"
     }
   },
   "scripts": {

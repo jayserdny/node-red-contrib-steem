@@ -1,0 +1,24 @@
+<script type="text/javascript">
+    RED.nodes.registerType('getMinerQueue',{
+      category: 'Steem Blockchain',
+      color: '#09add4',
+      defaults: {
+        name: {value:''}
+      },
+      inputs:1,
+      outputs:1,
+      label: function() {
+        return this.name || 'getMinerQueue';
+      }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="getMinerQueue">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+<script type="text/x-red" data-help-name="getMinerQueue">
+    <p>Node-RED package to query miner queue from Steem Blockchain.</p>
+</script>
