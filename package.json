@@ -9,7 +9,8 @@
       "getConversionRequests": "nodes/accounts/getConversionRequests.js",
       "getAccountHistory": "nodes/accounts/getAccountHistory.js",
       "getOwnerHistory": "nodes/accounts/getOwnerHistory.js",
-      "getRecoveryRequest": "nodes/accounts/getRecoveryRequest.js"
+      "getRecoveryRequest": "nodes/accounts/getRecoveryRequest.js",
+      "getContent": "nodes/content/getContent.js"
     }
   },
   "scripts": {

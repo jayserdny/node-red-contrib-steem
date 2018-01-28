@@ -1,0 +1,34 @@
+<script type="text/javascript">
+    RED.nodes.registerType('getContent',{
+      category: 'Steem Blockchain',
+      color: '#65bf77',
+      defaults: {
+        name: {value:''},
+        author: {value:'jaysermendez'},
+        permlink: {value:'node-red-nodes-for-steem-blockchain-api'}
+      },
+      inputs:1,
+      outputs:1,
+      label: function() {
+        return this.name || 'getContent';
+      }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="getContent">
+    <div class="form-row">
+        <label for="node-input-author"><i class="icon-tag"></i> Author</label>
+        <input type="text" id="node-input-author" placeholder="Author">
+    </div>
+    <div class="form-row">
+        <label for="node-input-permlink"><i class="icon-tag"></i> Permlink</label>
+        <input type="text" id="node-input-permlink" placeholder="Permlink">
+    </div>
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+<script type="text/x-red" data-help-name="getContent">
+    <p>Node-RED package to query accounts from Steem Blockchain.</p>
+</script>
