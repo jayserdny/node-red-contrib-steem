@@ -8,11 +8,28 @@ module.exports = (RED) => {
         var param = config;
         
         node.on('input', (msg) => {
-            let accountName = param.accountName
             
-            steem.api.getRecoveryRequest(accountName, (err, response) => {
-                msg.payload = response
-                node.send(msg);
+            // Set initial status of the node
+            node.status({});
+            
+            steem.api.getRecoveryRequest(param.accountName, (err, response) => {
+                // Check if the response is correct
+                if (response) {
+                    msg.payload = response;
+                    node.send(msg);
+                }
+                // Catch the error and let the client know
+                else {
+                    // Send the error to the console as well
+                    node.error(err, msg);
+                    node.status({
+                        fill: "red",
+                        shape: "ring",
+                        text: err
+                    });
+                    // replace the payload with the actual error
+                    msg.payload = err.toString();
+                }
             });        
         });
     }
