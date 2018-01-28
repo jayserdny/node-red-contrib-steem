@@ -1,0 +1,44 @@
+<script type="text/javascript">
+    RED.nodes.registerType('getDiscussionsByAuthorBeforeDate',{
+      category: 'Steem Blockchain',
+      color: '#f00',
+      defaults: {
+        name: {value:''},
+        author: {value:'jaysermendez'},
+        startPermlink: {value:'node-red-nodes-for-steem-blockchain-api'},
+        beforeDate: {value:''},
+        limit: {value:''}
+      },
+      inputs:1,
+      outputs:1,
+      label: function() {
+        return this.name || 'getDiscussionsByAuthorBeforeDate';
+      }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="getDiscussionsByAuthorBeforeDate">
+    <div class="form-row">
+        <label for="node-input-author"><i class="icon-tag"></i> Author</label>
+        <input type="text" id="node-input-author" placeholder="Author">
+    </div>
+    <div class="form-row">
+        <label for="node-input-startPermlink"><i class="icon-tag"></i> Start Permlink</label>
+        <input type="text" id="node-input-startPermlink" placeholder="Start Permlink">
+    </div>
+    <div class="form-row">
+        <label for="node-input-beforeDate"><i class="icon-tag"></i> Before Date</label>
+        <input type="text" id="node-input-beforeDate" placeholder="Before Date">
+    </div>
+    <div class="form-row">
+        <label for="node-input-limit"><i class="icon-tag"></i> Limit</label>
+        <input type="text" id="node-input-limit" placeholder="Limit">
+    </div>
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+<script type="text/x-red" data-help-name="getDiscussionsByAuthorBeforeDate">
+    <p>Node-RED package to query disccusions by author before date from Steem Blockchain.</p>
+</script>

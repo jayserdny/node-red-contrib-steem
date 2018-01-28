@@ -13,6 +13,21 @@ With this library, you will be able to use the Steem js library with just drag a
 - getOwnerHistory
 - getRecoveryRequest
 
+**Content:**
+
+- getContent
+- getContentReplies
+- getDiscussionsByAuthorBeforeDate
+- getRepliesByLastUpdate
+
+**Witnesses:**
+
+- getActiveWitnesses
+- getMinerQueue
+- getWitnessByAccount
+- getWitnessCount
+- getWitnesses
+- getWitnessesByVote
 
 ### Requirements
 

@@ -2,19 +2,19 @@ var steem = require('steem');
 
 module.exports = (RED) => {
     "use strict";
-    function getConversionRequestsNode(config) {
+    function getWitnessByAccountNode(config) {
         RED.nodes.createNode(this,config);
         var node = this;
         var param = config;
         
         node.on('input', (msg) => {
-            let accountName = param.accountName
+            let accountName = param.accountName.trim();
             
-            steem.api.getConversionRequests(accountName, (err, response) => {
+            steem.api.getWitnessByAccount(accountName, (err, response) => {
                 msg.payload = response
                 node.send(msg);
             });        
         });
     }
-    RED.nodes.registerType("getConversionRequests", getConversionRequestsNode);
+    RED.nodes.registerType("getWitnessByAccount", getWitnessByAccountNode);
 }

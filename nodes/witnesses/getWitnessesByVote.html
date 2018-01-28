@@ -1,26 +1,21 @@
 <script type="text/javascript">
-    RED.nodes.registerType('getAccountHistory',{
+    RED.nodes.registerType('getWitnessesByVote',{
       category: 'Steem Blockchain',
-      color: '#65bf77',
+      color: '#09add4',
       defaults: {
         name: {value:''},
-        account: {value:'ned'},
-        from: {value:0},
-        limit: {value:15}
+        from: {value:'0'},
+        limit: {value: '10'}
       },
       inputs:1,
       outputs:1,
       label: function() {
-        return this.name || 'getAccountHistory';
+        return this.name || 'getWitnessesByVote';
       }
     });
 </script>
 
-<script type="text/x-red" data-template-name="getAccountHistory">
-    <div class="form-row">
-        <label for="node-input-account"><i class="icon-tag"></i> Account</label>
-        <input type="text" id="node-input-account" placeholder="Account">
-    </div>
+<script type="text/x-red" data-template-name="getWitnessesByVote">
     <div class="form-row">
         <label for="node-input-from"><i class="icon-tag"></i> From</label>
         <input type="text" id="node-input-from" placeholder="From">
@@ -34,6 +29,6 @@
         <input type="text" id="node-input-name" placeholder="Name">
     </div>
 </script>
-<script type="text/x-red" data-help-name="getAccountHistory">
-    <p>Node-RED package to query account history from Steem Blockchain.</p>
+<script type="text/x-red" data-help-name="getWitnessesByVote">
+    <p>Node-RED package to query witnesses by vote from Steem Blockchain.</p>
 </script>

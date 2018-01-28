@@ -1,0 +1,39 @@
+<script type="text/javascript">
+    RED.nodes.registerType('getRepliesByLastUpdate',{
+      category: 'Steem Blockchain',
+      color: '#f00',
+      defaults: {
+        name: {value:''},
+        startAuthor: {value:'jaysermendez'},
+        startPermlink: {value:'node-red-nodes-for-steem-blockchain-api'},
+        limit: {value:''}
+      },
+      inputs:1,
+      outputs:1,
+      label: function() {
+        return this.name || 'getRepliesByLastUpdate';
+      }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="getRepliesByLastUpdate">
+    <div class="form-row">
+        <label for="node-input-author"><i class="icon-tag"></i> Author</label>
+        <input type="text" id="node-input-author" placeholder="Author">
+    </div>
+    <div class="form-row">
+        <label for="node-input-startPermlink"><i class="icon-tag"></i> Start Permlink</label>
+        <input type="text" id="node-input-startPermlink" placeholder="Start Permlink">
+    </div>
+    <div class="form-row">
+        <label for="node-input-limit"><i class="icon-tag"></i> Limit</label>
+        <input type="text" id="node-input-limit" placeholder="Limit">
+    </div>
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+<script type="text/x-red" data-help-name="getRepliesByLastUpdate">
+    <p>Node-RED package to query replies by last update from Steem Blockchain.</p>
+</script>
