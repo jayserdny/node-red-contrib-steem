@@ -13,7 +13,10 @@
       "getContent": "nodes/content/getContent.js",
       "getContentReplies": "nodes/content/getContentReplies.js",
       "getDiscussionsByAuthorBeforeDate": "nodes/content/getDiscussionsByAuthorBeforeDate.js",
-      "getRepliesByLastUpdate": "nodes/content/getRepliesByLastUpdate.js"
+      "getRepliesByLastUpdate": "nodes/content/getRepliesByLastUpdate.js",
+      "getWitnesses": "nodes/witnesses/getWitnesses.js",
+      "getWitnessByAccount": "nodes/witnesses/getWitnessByAccount.js",
+      "getWitnessesByVote": "nodes/witnesses/getWitnessesByVote.js"
     }
   },
   "scripts": {
