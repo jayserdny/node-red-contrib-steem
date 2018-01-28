@@ -1,4 +1,5 @@
 var steem = require('steem');
+var validateParams = require('../util/validateFields');
 
 module.exports = (RED) => {
     "use strict";
@@ -12,10 +13,23 @@ module.exports = (RED) => {
             // Set initial status of the node
             node.status({});
 
+            let validation = validateParams(param.account, param.from, param.limit);
+
+            if (validation === false) {
+                node.status({
+                    fill: "red",
+                    shape: "ring",
+                    text: "All params are required"
+                });
+                return false;
+            }
+
             steem.api.getAccountHistory(param.account, param.from, param.limit
             , (err, response) => {
+                console.log(param.account)
                 // If the query is correct, return the response
                 if (response) {
+                    console.log("response")
                     msg.payload = response;
                     node.send(msg);
                 }

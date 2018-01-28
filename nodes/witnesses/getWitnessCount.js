@@ -5,13 +5,27 @@ module.exports = (RED) => {
     function getWitnessCountNode(config) {
         RED.nodes.createNode(this,config);
         var node = this;
-        var param = config;
         
         node.on('input', (msg) => {
             
             steem.api.getWitnessCount((err, response) => {
-                msg.payload = response
-                node.send(msg);
+                // Check if the response is correct
+                if (response) {
+                    msg.payload = response;
+                    node.send(msg);
+                }
+                // Catch the error and let the client know
+                else {
+                    // Send the error to the console as well
+                    node.error(err, msg);
+                    node.status({
+                        fill: "red",
+                        shape: "ring",
+                        text: err
+                    });
+                    // replace the payload with the actual error
+                    msg.payload = err.toString();
+                }
             });        
         });
     }
