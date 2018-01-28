@@ -1,0 +1,24 @@
+<script type="text/javascript">
+    RED.nodes.registerType('getFeedHistory', {
+      category: 'Steem Blockchain',
+      color: '#5eff00',
+      defaults: {
+        name: {value:''}
+      },
+      inputs:1,
+      outputs:1,
+      label: function() {
+        return this.name || 'getFeedHistory';
+      }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="getFeedHistory">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+<script type="text/x-red" data-help-name="getFeedHistory">
+    <p>Node-RED package to get feed history from Steem Blockchain.</p>
+</script>
