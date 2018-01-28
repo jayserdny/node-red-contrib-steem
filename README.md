@@ -29,6 +29,18 @@ With this library, you will be able to use the Steem js library with just drag a
 - getWitnesses
 - getWitnessesByVote
 
+**Globals:**
+
+- getChainProperties
+- getConfig
+- getCurrentMedianHistoryPrice
+- getDynamicGlobalProperties
+- getFeedHistory
+- getHardforkVersion
+- getNextScheduledHardfork
+- getRewardFund
+- getVestingDelegations
+
 ### Requirements
 
 To run the nodes on your localhost you must have Node-RED installed on your localhost. 

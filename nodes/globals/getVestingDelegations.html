@@ -1,25 +1,25 @@
 <script type="text/javascript">
-    RED.nodes.registerType('getAccountHistory',{
+    RED.nodes.registerType('getVestingDelegations', {
       category: 'Steem Blockchain',
-      color: '#65bf77',
+      color: '#5eff00',
       defaults: {
         name: {value:''},
         account: {value:'ned', required: true},
-        from: {value:0, required: true},
-        limit: {value:15, required: true}
+        from: {value: 20, required: true},
+        limit: {value: 10, required: true}
       },
       inputs:1,
       outputs:1,
       label: function() {
-        return this.name || 'getAccountHistory';
+        return this.name || 'getVestingDelegations';
       }
     });
 </script>
 
-<script type="text/x-red" data-template-name="getAccountHistory">
+<script type="text/x-red" data-template-name="getVestingDelegations">
     <div class="form-row">
-        <label for="node-input-account"><i class="icon-tag"></i> Account</label>
-        <input type="text" id="node-input-account" placeholder="Account">
+        <label for="node-input-accountName"><i class="icon-tag"></i> Account Name</label>
+        <input type="text" id="node-input-accountName" placeholder="Account Name">
     </div>
     <div class="form-row">
         <label for="node-input-from"><i class="icon-tag"></i> From</label>
@@ -34,6 +34,6 @@
         <input type="text" id="node-input-name" placeholder="Name">
     </div>
 </script>
-<script type="text/x-red" data-help-name="getAccountHistory">
-    <p>Node-RED package to query account history from Steem Blockchain.</p>
+<script type="text/x-red" data-help-name="getVestingDelegations">
+    <p>Node-RED package to get vesting delegations from Steem Blockchain.</p>
 </script>

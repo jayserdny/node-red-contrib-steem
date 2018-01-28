@@ -3,7 +3,7 @@ var validateParams = require('../util/validateFields');
 
 module.exports = (RED) => {
     "use strict";
-    function getContentRepliesNode(config) {
+    function getRewardFundNode(config) {
         RED.nodes.createNode(this,config);
         var node = this;
         var param = config;
@@ -14,7 +14,7 @@ module.exports = (RED) => {
             node.status({});
 
             // Pass arguments to validator
-            let validation = validateParams(param.author, param.permlink);
+            let validation = validateParams(param.Reward_Fund_Name);
 
             if (validation === false) {
                 node.status({
@@ -25,10 +25,7 @@ module.exports = (RED) => {
                 return false;
             }
 
-            let author = param.author.trim();
-            let permlink = param.permlink.trim();
-
-            steem.api.getContentReplies(author, permlink, (err, response) => {
+            steem.api.getRewardFund(param.Reward_Fund_Name, (err, response) => {
                 // Check if the response is correct
                 if (response) {
                     msg.payload = response;
@@ -49,5 +46,5 @@ module.exports = (RED) => {
             });
         });
     }
-    RED.nodes.registerType("getContentReplies", getContentRepliesNode);
+    RED.nodes.registerType("getRewardFund", getRewardFundNode);
   }

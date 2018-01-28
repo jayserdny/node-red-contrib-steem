@@ -1,0 +1,29 @@
+<script type="text/javascript">
+    RED.nodes.registerType('getRewardFund', {
+      category: 'Steem Blockchain',
+      color: '#5eff00',
+      defaults: {
+        name: {value:''},
+        Reward_Fund_Name: {value:'', required: true}
+      },
+      inputs:1,
+      outputs:1,
+      label: function() {
+        return this.name || 'getRewardFund';
+      }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="getRewardFund">
+    <div class="form-row">
+        <label for="node-input-Reward_Fund_Name"><i class="icon-tag"></i> Reward Fund Name</label>
+        <input type="text" id="node-input-Reward_Fund_Name" placeholder="Reward Fund Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+<script type="text/x-red" data-help-name="getRewardFund">
+    <p>Node-RED package to get the reward fund from a given user in Steem Blockchain.</p>
+</script>

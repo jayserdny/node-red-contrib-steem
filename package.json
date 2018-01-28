@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-steem",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Node Red nodes for the Steem Blockchain",
   "node-red": {
     "nodes": {
@@ -19,7 +19,16 @@
       "getWitnessesByVote": "nodes/witnesses/getWitnessesByVote.js",
       "getWitnessCount": "nodes/witnesses/getWitnessCount.js",
       "getMinerQueue": "nodes/witnesses/getMinerQueue.js",
-      "getActiveWitnesses": "nodes/witnesses/getActiveWitnesses.js"
+      "getActiveWitnesses": "nodes/witnesses/getActiveWitnesses.js",
+      "getConfig": "nodes/globals/getConfig.js",
+      "getDynamicGlobalProperties": "nodes/globals/getDynamicGlobalProperties.js",
+      "getChainProperties": "nodes/globals/getChainProperties.js",
+      "getFeedHistory": "nodes/globals/getFeedHistory.js",
+      "getCurrentMedianHistoryPrice": "nodes/globals/getCurrentMedianHistoryPrice.js",
+      "getHardforkVersion": "nodes/globals/getHardforkVersion.js",
+      "getNextScheduledHardfork": "nodes/globals/getNextScheduledHardfork.js",
+      "getRewardFund": "nodes/globals/getRewardFund.js",
+      "getVestingDelegations": "nodes/globals/getVestingDelegations.js"
     }
   },
   "scripts": {

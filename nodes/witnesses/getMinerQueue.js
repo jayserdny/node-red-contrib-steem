@@ -5,13 +5,30 @@ module.exports = (RED) => {
     function getMinerQueueNode(config) {
         RED.nodes.createNode(this,config);
         var node = this;
-        var param = config;
         
         node.on('input', (msg) => {
+
+            // Set initial status of the node
+            node.status({});
             
             steem.api.getMinerQueue((err, response) => {
-                msg.payload = response
-                node.send(msg);
+                // Check if the response is correct
+                if (response) {
+                    msg.payload = response;
+                    node.send(msg);
+                }
+                // Catch the error and let the client know
+                else {
+                    // Send the error to the console as well
+                    node.error(err, msg);
+                    node.status({
+                        fill: "red",
+                        shape: "ring",
+                        text: err
+                    });
+                    // replace the payload with the actual error
+                    msg.payload = err.toString();
+                }
             });        
         });
     }
