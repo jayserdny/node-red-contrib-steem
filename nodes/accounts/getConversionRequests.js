@@ -8,7 +8,7 @@ module.exports = (RED) => {
         var param = config;
         
         node.on('input', (msg) => {
-            let accountName = param.accounts
+            let accountName = param.accountName
             
             steem.api.getConversionRequests(accountName, (err, response) => {
                 msg.payload = response
