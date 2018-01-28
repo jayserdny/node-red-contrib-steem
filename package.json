@@ -10,7 +10,10 @@
       "getAccountHistory": "nodes/accounts/getAccountHistory.js",
       "getOwnerHistory": "nodes/accounts/getOwnerHistory.js",
       "getRecoveryRequest": "nodes/accounts/getRecoveryRequest.js",
-      "getContent": "nodes/content/getContent.js"
+      "getContent": "nodes/content/getContent.js",
+      "getContentReplies": "nodes/content/getContentReplies.js",
+      "getDiscussionsByAuthorBeforeDate": "nodes/content/getDiscussionsByAuthorBeforeDate.js",
+      "getRepliesByLastUpdate": "nodes/content/getRepliesByLastUpdate.js"
     }
   },
   "scripts": {

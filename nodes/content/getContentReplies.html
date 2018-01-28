@@ -1,5 +1,5 @@
 <script type="text/javascript">
-    RED.nodes.registerType('getContent',{
+    RED.nodes.registerType('getContentReplies',{
       category: 'Steem Blockchain',
       color: '#f00',
       defaults: {
@@ -10,12 +10,12 @@
       inputs:1,
       outputs:1,
       label: function() {
-        return this.name || 'getContent';
+        return this.name || 'getContentReplies';
       }
     });
 </script>
 
-<script type="text/x-red" data-template-name="getContent">
+<script type="text/x-red" data-template-name="getContentReplies">
     <div class="form-row">
         <label for="node-input-author"><i class="icon-tag"></i> Author</label>
         <input type="text" id="node-input-author" placeholder="Author">
@@ -29,6 +29,6 @@
         <input type="text" id="node-input-name" placeholder="Name">
     </div>
 </script>
-<script type="text/x-red" data-help-name="getContent">
+<script type="text/x-red" data-help-name="getContentReplies">
     <p>Node-RED package to query accounts from Steem Blockchain.</p>
 </script>
