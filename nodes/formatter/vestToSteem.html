@@ -1,0 +1,39 @@
+<script type="text/javascript">
+    RED.nodes.registerType('vestToSteem',{
+      category: 'Steem Blockchain',
+      color: '#ddff78',
+      defaults: {
+        name: {value:''},
+        vestingShares: {value: '', required: true},
+        totalVestingShares: {value: '', required: true},
+        totalVestingFundSteem: {value: '', required: true},
+      },
+      inputs:1,
+      outputs:1,
+      label: function() {
+        return this.name || 'vestToSteem';
+      }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="vestToSteem">
+    <div class="form-row">
+        <label for="node-input-vestingShares"><i class="icon-tag"></i> Vesting Shares</label>
+        <input type="text" id="node-input-vestingShares" placeholder="Vesting Shares">
+    </div>
+    <div class="form-row">
+        <label for="node-input-totalVestingShares"><i class="icon-tag"></i> Total Vesting Shares</label>
+        <input type="text" id="node-input-totalVestingShares" placeholder="Total Vesting Shares">
+    </div>
+    <div class="form-row">
+        <label for="node-input-totalVestingFundSteem"><i class="icon-tag"></i> Total Vesting Fund Steem</label>
+        <input type="text" id="node-input-totalVestingFundSteem" placeholder="Total Vesting Fund Steem">
+    </div>
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+<script type="text/x-red" data-help-name="vestToSteem">
+    <p>Node-RED package to convert from vest to steem in the Steem Blockchain.</p>
+</script>

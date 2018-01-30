@@ -1,0 +1,29 @@
+<script type="text/javascript">
+    RED.nodes.registerType('formatReputation',{
+      category: 'Steem Blockchain',
+      color: '#ddff78',
+      defaults: {
+        name: {value:''},
+        reputation: {value: '3512485230915', required: true}
+      },
+      inputs:1,
+      outputs:1,
+      label: function() {
+        return this.name || 'formatReputation';
+      }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="formatReputation">
+    <div class="form-row">
+        <label for="node-input-reputation"><i class="icon-tag"></i> Reputation</label>
+        <input type="text" id="node-input-reputation" placeholder="Reputation">
+    </div>
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+<script type="text/x-red" data-help-name="formatReputation">
+    <p>Node-RED package to calculate the correct reputation of an account in the Steem Blockchain.</p>
+</script>

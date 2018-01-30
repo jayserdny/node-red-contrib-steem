@@ -32,7 +32,12 @@
       "getOrderBook": "nodes/market/getOrderBook.js",
       "getOpenOrders": "nodes/market/getOpenOrders.js",
       "getLiquidityQueue": "nodes/market/getLiquidityQueue.js",
-      "getKeyReferences": "nodes/keys/getKeyReferences.js"
+      "getKeyReferences": "nodes/keys/getKeyReferences.js",
+      "createSuggestedPassword": "nodes/formatter/createSuggestedPassword.js",
+      "commentPermlink": "nodes/formatter/commentPermlink.js",
+      "estimateAccountValue": "nodes/formatter/estimateAccountValue.js",
+      "formatReputation": "nodes/formatter/formatReputation.js",
+      "vestToSteem": "nodes/formatter/vestToSteem.js"
     }
   },
   "scripts": {
