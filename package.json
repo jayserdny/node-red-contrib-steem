@@ -31,7 +31,8 @@
       "getVestingDelegations": "nodes/globals/getVestingDelegations.js",
       "getOrderBook": "nodes/market/getOrderBook.js",
       "getOpenOrders": "nodes/market/getOpenOrders.js",
-      "getLiquidityQueue": "nodes/market/getLiquidityQueue.js"
+      "getLiquidityQueue": "nodes/market/getLiquidityQueue.js",
+      "getKeyReferences": "nodes/keys/getKeyReferences.js"
     }
   },
   "scripts": {
