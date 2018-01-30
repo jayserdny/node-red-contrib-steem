@@ -1,0 +1,29 @@
+<script type="text/javascript">
+    RED.nodes.registerType('validateAccountName',{
+      category: 'Steem Blockchain',
+      color: '#ddff78',
+      defaults: {
+        name: {value:''},
+        accountName: {value: 'a1', required: true}
+      },
+      inputs:1,
+      outputs:1,
+      label: function() {
+        return this.name || 'validateAccountName';
+      }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="validateAccountName">
+    <div class="form-row">
+        <label for="node-input-accountName"><i class="icon-tag"></i> Account Name</label>
+        <input type="text" id="node-input-accountName" placeholder="Account Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+<script type="text/x-red" data-help-name="validateAccountName">
+    <p>Node-RED package to validate account name in the Steem Blockchain.</p>
+</script>

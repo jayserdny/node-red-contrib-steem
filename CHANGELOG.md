@@ -1,5 +1,8 @@
 CHANGELOG
 =========
+## 0.0.4 - 2018-01-30
+
+- Added commentPermlink, createSuggestedPassword, estimateAccountValue, formatReputation, vestToSteem, getKeyReferences, getLiquidityQueue, getOpenOrders, getOrderBook, and validateAccountName nodes.
 
 ## 0.0.3 - 2018-01-28
 

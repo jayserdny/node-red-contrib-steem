@@ -1,0 +1,34 @@
+<script type="text/javascript">
+    RED.nodes.registerType('commentPermlink',{
+      category: 'Steem Blockchain',
+      color: '#ddff78',
+      defaults: {
+        name: {value:''},
+        parentAuthor: {value:'', required: true},
+        parentPermlink: {value:'', required: true}
+      },
+      inputs:1,
+      outputs:1,
+      label: function() {
+        return this.name || 'commentPermlink';
+      }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="commentPermlink">
+    <div class="form-row">
+        <label for="node-input-parentAuthor"><i class="icon-tag"></i> Parent Author</label>
+        <input type="text" id="node-input-parentAuthor" placeholder="Parent Author">
+    </div>
+    <div class="form-row">
+        <label for="node-input-parentPermlink"><i class="icon-tag"></i> Parent Permlink</label>
+        <input type="text" id="node-input-parentPermlink" placeholder="Parent Permlink">
+    </div>
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+<script type="text/x-red" data-help-name="commentPermlink">
+    <p>Node-RED package to query comment permlink in the Steem Blockchain.</p>
+</script>
