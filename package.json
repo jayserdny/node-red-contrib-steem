@@ -28,7 +28,10 @@
       "getHardforkVersion": "nodes/globals/getHardforkVersion.js",
       "getNextScheduledHardfork": "nodes/globals/getNextScheduledHardfork.js",
       "getRewardFund": "nodes/globals/getRewardFund.js",
-      "getVestingDelegations": "nodes/globals/getVestingDelegations.js"
+      "getVestingDelegations": "nodes/globals/getVestingDelegations.js",
+      "getOrderBook": "nodes/market/getOrderBook.js",
+      "getOpenOrders": "nodes/market/getOpenOrders.js",
+      "getLiquidityQueue": "nodes/market/getLiquidityQueue.js"
     }
   },
   "scripts": {
