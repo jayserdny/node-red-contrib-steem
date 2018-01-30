@@ -25,7 +25,7 @@ module.exports = (RED) => {
                 return false;
             }
 
-            let reputation = parseInt(param.account.trim());
+            let reputation = parseInt(param.reputation.trim());
 
             var reputationFinal = steem.formatter.reputation(reputation);
             msg.payload = reputationFinal;
