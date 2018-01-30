@@ -37,7 +37,8 @@
       "commentPermlink": "nodes/formatter/commentPermlink.js",
       "estimateAccountValue": "nodes/formatter/estimateAccountValue.js",
       "formatReputation": "nodes/formatter/formatReputation.js",
-      "vestToSteem": "nodes/formatter/vestToSteem.js"
+      "vestToSteem": "nodes/formatter/vestToSteem.js",
+      "validateAccountName": "nodes/util/validateAccountName.js"
     }
   },
   "scripts": {
