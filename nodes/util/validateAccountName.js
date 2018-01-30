@@ -28,7 +28,13 @@ module.exports = (RED) => {
             let accountName = param.accountName.trim();
 
             var isValidUsername = steem.utils.validateAccountName(accountName);
-            msg.payload = isValidUsername;
+
+            if (isValidUsername === null) {
+                msg.payload = "This is a valid user";
+            } else {
+                msg.payload = isValidUsername;
+            }
+            
             node.send(msg);
         });
     }
