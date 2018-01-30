@@ -25,7 +25,7 @@ module.exports = (RED) => {
                 return false;
             }
 
-            let accountName = parseInt(param.accountName.trim());
+            let accountName = param.accountName.trim();
 
             var isValidUsername = steem.utils.validateAccountName(accountName);
             msg.payload = isValidUsername;
