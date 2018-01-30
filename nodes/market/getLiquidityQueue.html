@@ -1,0 +1,34 @@
+<script type="text/javascript">
+    RED.nodes.registerType('getLiquidityQueue',{
+      category: 'Steem Blockchain',
+      color: '#e800ff',
+      defaults: {
+        name: {value:''},
+        startAccount: {value:'ned', required: true},
+        limit: {value:'10', required: true}
+      },
+      inputs:1,
+      outputs:1,
+      label: function() {
+        return this.name || 'getLiquidityQueue';
+      }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="getLiquidityQueue">
+    <div class="form-row">
+        <label for="node-input-startAccount"><i class="icon-tag"></i> Start Account</label>
+        <input type="text" id="node-input-startAccount" placeholder="Start Account">
+    </div>
+    <div class="form-row">
+        <label for="node-input-limit"><i class="icon-tag"></i> Limit</label>
+        <input type="text" id="node-input-limit" placeholder="Limit">
+    </div>
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+<script type="text/x-red" data-help-name="getLiquidityQueue">
+    <p>Node-RED package to query liquidity queue in the Steem Blockchain Market.</p>
+</script>

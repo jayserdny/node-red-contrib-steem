@@ -1,0 +1,28 @@
+<script type="text/javascript">
+    RED.nodes.registerType('getOpenOrders',{
+      category: 'Steem Blockchain',
+      color: '#e800ff',
+      defaults: {
+        name: {value:''},
+        owner: {value:'ned', required: true},
+      },
+      inputs:1,
+      outputs:1,
+      label: function() {
+        return this.name || 'getOpenOrders';
+      }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="getOpenOrders">
+    <div class="form-row">
+        <label for="node-input-owner"><i class="icon-tag"></i> Owner</label>
+        <input type="text" id="node-input-owner" placeholder="Owner">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+<script type="text/x-red" data-help-name="getOpenOrders">
+    <p>Node-RED package to query open orders in the Steem Blockchain Market.</p>
+</script>

@@ -1,0 +1,28 @@
+<script type="text/javascript">
+    RED.nodes.registerType('getOrderBook',{
+      category: 'Steem Blockchain',
+      color: '#e800ff',
+      defaults: {
+        name: {value:''},
+        limit: {value:'10', required: true},
+      },
+      inputs:1,
+      outputs:1,
+      label: function() {
+        return this.name || 'getOrderBook';
+      }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="getOrderBook">
+    <div class="form-row">
+        <label for="node-input-limit"><i class="icon-tag"></i> Limit</label>
+        <input type="text" id="node-input-limit" placeholder="Limit">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+<script type="text/x-red" data-help-name="getOrderBook">
+    <p>Node-RED package to query the order book in the Steem Blockchain Market.</p>
+</script>
