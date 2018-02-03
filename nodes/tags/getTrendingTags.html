@@ -1,0 +1,34 @@
+<script type="text/javascript">
+    RED.nodes.registerType('getTrendingTags',{
+      category: 'Steem Blockchain',
+      color: '#ff00f3',
+      defaults: {
+        name: {value:''},
+        afterTag: {value:'spanish', required: true},
+        limit: {value:'10', required: true}
+      },
+      inputs:1,
+      outputs:1,
+      label: function() {
+        return this.name || 'getTrendingTags';
+      }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="getTrendingTags">
+    <div class="form-row">
+        <label for="node-input-afterTag"><i class="icon-tag"></i> After Tag</label>
+        <input type="text" id="node-input-afterTag" placeholder="After Tag">
+    </div>
+    <div class="form-row">
+        <label for="node-input-limit"><i class="icon-tag"></i> Limit</label>
+        <input type="text" id="node-input-limit" placeholder="Limit">
+    </div>
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+<script type="text/x-red" data-help-name="getTrendingTags">
+    <p>Node-RED package to query trending tags Steem Blockchain Market.</p>
+</script>
