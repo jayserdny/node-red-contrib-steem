@@ -50,7 +50,11 @@
       "getDiscussionsByHot": "nodes/tags/getDiscussionsByHot.js",
       "getDiscussionsByFeed": "nodes/tags/getDiscussionsByFeed.js",
       "getDiscussionsByBlog": "nodes/tags/getDiscussionsByBlog.js",
-      "getDiscussionsByComments": "nodes/tags/getDiscussionsByComments.js"
+      "getDiscussionsByComments": "nodes/tags/getDiscussionsByComments.js",
+      "getChainId": "nodes/config/getChainId.js",
+      "setAddressPrefix": "nodes/config/setAddressPrefix.js",
+      "setChainId": "nodes/config/setChainId.js",
+      "setOptions": "nodes/config/setOptions.js"
     }
   },
   "scripts": {
