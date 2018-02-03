@@ -1,3 +1,3 @@
-var steem = require('steem');
+const steem = require('steem');
 
 module.exports = steem;

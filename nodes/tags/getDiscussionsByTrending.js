@@ -1,4 +1,4 @@
-var steem = require('../steem');
+var steem = require('../steem.js');
 var validateParams = require('../util/validateFields');
 
 module.exports = (RED) => {

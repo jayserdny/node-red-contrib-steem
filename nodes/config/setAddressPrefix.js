@@ -7,6 +7,8 @@ module.exports = (RED) => {
         RED.nodes.createNode(this,config);
         var node = this;
         var param = config;
+
+      
         
         node.on('input', (msg) => {
 
@@ -24,7 +26,7 @@ module.exports = (RED) => {
                 });
                 return false;
             }
-            
+
             steem.config.set('address_prefix',param.addresPrefix);
             msg.payload = 'Address prefix set to ' + param.addresPrefix;
 
