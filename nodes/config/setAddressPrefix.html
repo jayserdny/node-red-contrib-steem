@@ -1,0 +1,29 @@
+<script type="text/javascript">
+    RED.nodes.registerType('setAddressPrefix',{
+      category: 'Steem Blockchain',
+      color: '#f5deb3',
+      defaults: {
+        name: {value:''},
+        addresPrefix: {value: 'STM', required: true}
+      },
+      inputs:1,
+      outputs:1,
+      label: function() {
+        return this.name || 'setAddressPrefix';
+      }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="setAddressPrefix">
+    <div class="form-row">
+        <label for="node-input-addresPrefix"><i class="icon-tag"></i> Address Prefix</label>
+        <input type="text" id="node-input-addresPrefix" placeholder="Address Prefix">
+    </div>
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+<script type="text/x-red" data-help-name="setAddressPrefix">
+    <p>Node-RED package to set Adress Prefix.</p>
+</script>

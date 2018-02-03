@@ -1,0 +1,24 @@
+<script type="text/javascript">
+    RED.nodes.registerType('getChainId',{
+      category: 'Steem Blockchain',
+      color: '#f5deb3',
+      defaults: {
+        name: {value:''}
+      },
+      inputs:1,
+      outputs:1,
+      label: function() {
+        return this.name || 'getChainId';
+      }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="getChainId">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+<script type="text/x-red" data-help-name="getChainId">
+    <p>Node-RED package to get chain id.</p>
+</script>

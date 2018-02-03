@@ -1,0 +1,29 @@
+<script type="text/javascript">
+    RED.nodes.registerType('setChainId',{
+      category: 'Steem Blockchain',
+      color: '#f5deb3',
+      defaults: {
+        name: {value:''},
+        chainId: {value: '782a3039b478c839e4cb0c941ff4eaeb7df40bdd68bd441afd444b9da763de12', required: true}
+      },
+      inputs:1,
+      outputs:1,
+      label: function() {
+        return this.name || 'setChainId';
+      }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="setChainId">
+    <div class="form-row">
+        <label for="node-input-chainId"><i class="icon-tag"></i> Chain ID</label>
+        <input type="text" id="node-input-chainId" placeholder="Chain ID">
+    </div>
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+<script type="text/x-red" data-help-name="setChainId">
+    <p>Node-RED package to set chain id.</p>
+</script>
