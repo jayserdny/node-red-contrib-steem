@@ -38,7 +38,19 @@
       "estimateAccountValue": "nodes/formatter/estimateAccountValue.js",
       "formatReputation": "nodes/formatter/formatReputation.js",
       "vestToSteem": "nodes/formatter/vestToSteem.js",
-      "validateAccountName": "nodes/util/validateAccountName.js"
+      "validateAccountName": "nodes/util/validateAccountName.js",
+      "getTrendingTags": "nodes/tags/getTrendingTags.js",
+      "getDiscussionsByTrending": "nodes/tags/getDiscussionsByTrending.js",
+      "getDiscussionsByCreated": "nodes/tags/getDiscussionsByCreated.js",
+      "getDiscussionsByActive": "nodes/tags/getDiscussionsByActive.js",
+      "getDiscussionsByCashout": "nodes/tags/getDiscussionsByCashout.js",
+      "getDiscussionsByPayout": "nodes/tags/getDiscussionsByPayout.js",
+      "getDiscussionsByVotes": "nodes/tags/getDiscussionsByVotes.js",
+      "getDiscussionsByChildren": "nodes/tags/getDiscussionsByChildren.js",
+      "getDiscussionsByHot": "nodes/tags/getDiscussionsByHot.js",
+      "getDiscussionsByFeed": "nodes/tags/getDiscussionsByFeed.js",
+      "getDiscussionsByBlog": "nodes/tags/getDiscussionsByBlog.js",
+      "getDiscussionsByComments": "nodes/tags/getDiscussionsByComments.js"
     }
   },
   "scripts": {
