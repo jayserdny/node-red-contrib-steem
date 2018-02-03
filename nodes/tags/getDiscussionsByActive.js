@@ -1,4 +1,4 @@
-var steem = require('steem');
+var steem = require('../steem');
 var validateParams = require('../util/validateFields');
 
 module.exports = (RED) => {
@@ -33,7 +33,7 @@ module.exports = (RED) => {
                 "limit": limit
             };
 
-            steem.api.getDiscussionsByActive(JSON.stringify(query), (err, response) => {
+            steem.api.getDiscussionsByActive(query, (err, response) => {
                 // Check if the response is correct
                 if (response) {
                     msg.payload = response;

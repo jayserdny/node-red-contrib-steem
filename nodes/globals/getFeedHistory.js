@@ -1,4 +1,4 @@
-var steem = require('steem');
+var steem = require('../steem');
 
 module.exports = (RED) => {
     "use strict";
