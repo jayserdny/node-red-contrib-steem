@@ -56,7 +56,13 @@
       "setChainId": "nodes/config/setChainId.js",
       "setOptions": "nodes/config/setOptions.js",
       "getAccountVotes": "nodes/votes/getAccountVotes.js",
-      "getActiveVotes": "nodes/votes/getActiveVotes.js"
+      "getActiveVotes": "nodes/votes/getActiveVotes.js",
+      "getTransactionHex": "nodes/authority_validation/getTransactionHex.js",
+      "getTransaction": "nodes/authority_validation/getTransaction.js",
+      "getRequiredSignatures": "nodes/authority_validation/getRequiredSignatures.js",
+      "getPotentialSignatures": "nodes/authority_validation/getPotentialSignatures.js",
+      "verifyAuthority": "nodes/authority_validation/verifyAuthority.js",
+      "verifyAccountAuthority": "nodes/authority_validation/verifyAccountAuthority.js"
     }
   },
   "scripts": {

@@ -1,0 +1,29 @@
+<script type="text/javascript">
+      RED.nodes.registerType('getPotentialSignatures', {
+            category: 'Steem Blockchain',
+            color: '#b0dfe4',
+            defaults: {
+                  name: { value: '' },
+                  trx: { value: '', required: true },
+            },
+            inputs: 1,
+            outputs: 1,
+            label: function () {
+                  return this.name || 'getPotentialSignatures';
+            }
+      });
+</script>
+
+<script type="text/x-red" data-template-name="getPotentialSignatures">
+      <div class="form-row">
+          <label for="node-input-trx"><i class="icon-tag"></i> Trx</label>
+          <input type="text" id="node-input-trx" placeholder="Trx">
+      </div>
+      <div class="form-row">
+          <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+          <input type="text" id="node-input-name" placeholder="Name">
+      </div>
+  </script>
+<script type="text/x-red" data-help-name="getPotentialSignatures">
+      <p>Node-RED package to get potential signatures in the Steem Blockchain.</p>
+</script>

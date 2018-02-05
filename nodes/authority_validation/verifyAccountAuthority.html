@@ -1,0 +1,34 @@
+<script type="text/javascript">
+      RED.nodes.registerType('verifyAccountAuthority', {
+            category: 'Steem Blockchain',
+            color: '#b0dfe4',
+            defaults: {
+                  name: { value: '' },
+                  nameOrId: { value: '', required: true },
+                  signers: { value: '', required: true }
+            },
+            inputs: 1,
+            outputs: 1,
+            label: function () {
+                  return this.name || 'verifyAccountAuthority';
+            }
+      });
+</script>
+
+<script type="text/x-red" data-template-name="verifyAccountAuthority">
+      <div class="form-row">
+          <label for="node-input-nameOrId"><i class="icon-tag"></i> Name or ID</label>
+          <input type="text" id="node-input-nameOrId" placeholder="Name or ID">
+      </div>
+      <div class="form-row">
+            <label for="node-input-signers"><i class="icon-tag"></i> Signers</label>
+            <input type="text" id="node-input-signers" placeholder="Signers">
+      </div>
+      <div class="form-row">
+          <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+          <input type="text" id="node-input-name" placeholder="Name">
+      </div>
+  </script>
+<script type="text/x-red" data-help-name="verifyAccountAuthority">
+      <p>Node-RED package to verify account authority in the Steem Blockchain.</p>
+</script>

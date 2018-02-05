@@ -73,8 +73,17 @@ With this library, you will be able to use the Steem js library with just drag a
 - getAccountVotes
 - getActiveVotes
 
+**Authority / validation:**
 
-Total Nodes: 43
+- getTransactionHex
+- getTransaction
+- getRequiredSignatures
+- getPotentialSignatures
+- verifyAuthority
+- verifyAccountAuthority
+
+
+Total Nodes: 49
 
 ### Requirements
 

@@ -1,0 +1,29 @@
+<script type="text/javascript">
+      RED.nodes.registerType('getTransaction', {
+            category: 'Steem Blockchain',
+            color: '#b0dfe4',
+            defaults: {
+                  name: { value: '' },
+                  trxId: { value: '', required: true },
+            },
+            inputs: 1,
+            outputs: 1,
+            label: function () {
+                  return this.name || 'getTransaction';
+            }
+      });
+</script>
+
+<script type="text/x-red" data-template-name="getTransaction">
+      <div class="form-row">
+          <label for="node-input-trxId"><i class="icon-tag"></i> TrxId</label>
+          <input type="text" id="node-input-trxId" placeholder="TrxId">
+      </div>
+      <div class="form-row">
+          <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+          <input type="text" id="node-input-name" placeholder="Name">
+      </div>
+  </script>
+<script type="text/x-red" data-help-name="getTransaction">
+      <p>Node-RED package to get transaction in the Steem Blockchain.</p>
+</script>
