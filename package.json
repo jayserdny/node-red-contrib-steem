@@ -54,7 +54,9 @@
       "getChainId": "nodes/config/getChainId.js",
       "setAddressPrefix": "nodes/config/setAddressPrefix.js",
       "setChainId": "nodes/config/setChainId.js",
-      "setOptions": "nodes/config/setOptions.js"
+      "setOptions": "nodes/config/setOptions.js",
+      "getAccountVotes": "nodes/votes/getAccountVotes.js",
+      "getActiveVotes": "nodes/votes/getActiveVotes.js"
     }
   },
   "scripts": {

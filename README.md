@@ -13,12 +13,14 @@ With this library, you will be able to use the Steem js library with just drag a
 - getOwnerHistory
 - getRecoveryRequest
 
+
 **Content:**
 
 - getContent
 - getContentReplies
 - getDiscussionsByAuthorBeforeDate
 - getRepliesByLastUpdate
+
 
 **Witnesses:**
 
@@ -28,6 +30,7 @@ With this library, you will be able to use the Steem js library with just drag a
 - getWitnessCount
 - getWitnesses
 - getWitnessesByVote
+
 
 **Globals:**
 
@@ -40,6 +43,38 @@ With this library, you will be able to use the Steem js library with just drag a
 - getNextScheduledHardfork
 - getRewardFund
 - getVestingDelegations
+
+
+**Tags:**
+
+- getTrendingTags
+- getDiscussionsByTrending
+- getDiscussionsByCreated
+- getDiscussionsByActive
+- getDiscussionsByCashout
+- getDiscussionsByPayout
+- getDiscussionsByVotes
+- getDiscussionsByChildren
+- getDiscussionsByHot
+- getDiscussionsByFeed
+- getDiscussionsByBlog
+- getDiscussionsByComments
+
+
+**Config:**
+
+- getChainId
+- setAddressPrefix
+- setChainId
+- setOptions
+
+**Votes:**
+
+- getAccountVotes
+- getActiveVotes
+
+
+Total Nodes: 43
 
 ### Requirements
 

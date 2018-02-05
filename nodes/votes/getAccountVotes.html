@@ -1,0 +1,29 @@
+<script type="text/javascript">
+      RED.nodes.registerType('getAccountVotes', {
+            category: 'Steem Blockchain',
+            color: '#e9967a',
+            defaults: {
+                  name: { value: '' },
+                  voter: { value: 'jaysermendez', required: true },
+            },
+            inputs: 1,
+            outputs: 1,
+            label: function () {
+                  return this.name || 'getAccountVotes';
+            }
+      });
+</script>
+
+<script type="text/x-red" data-template-name="getAccountVotes">
+      <div class="form-row">
+          <label for="node-input-voter"><i class="icon-tag"></i> Voter</label>
+          <input type="text" id="node-input-voter" placeholder="Voter">
+      </div>
+      <div class="form-row">
+          <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+          <input type="text" id="node-input-name" placeholder="Name">
+      </div>
+  </script>
+<script type="text/x-red" data-help-name="getAccountVotes">
+      <p>Node-RED package to query account votes in the Steem Blockchain.</p>
+</script>
