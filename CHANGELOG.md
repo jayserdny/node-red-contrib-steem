@@ -1,6 +1,10 @@
 CHANGELOG
 =========
 
+## 0.0.6 - 2018-02-05
+
+- getAccountVotes, getActiveVotes, getTransactionHex, getTransaction, getRequiredSignatures, getPotentialSignatures, verifyAuthority, and verifyAccountAuthority nodes added
+
 ## 0.0.5 - 2018-02-02
 
 - Added getTrendingTags, getDiscussionsByTrending, getDiscussionsByCreated, getDiscussionsByActive, getDiscussionsByCashout, getDiscussionsByPayout, getDiscussionsByVotes, getDiscussionsByChildren, getDiscussionsByHot, getDiscussionsByFeed, getDiscussionsByBlog, getDiscussionsByComments, getChainId, setAddressPrefix, setChainId, and setOptions nodes and steem instance removed from each node to make only 1 instance.
